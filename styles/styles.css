@@ -45,6 +45,14 @@ ul {
   list-style: none;
 }
 
+.not-mobile {
+  visibility: visible;
+}
+
+.mobile {
+  visibility: hidden;
+}
+
 
 /*GENERIC STYLES*/
 
@@ -69,6 +77,14 @@ ul {
   float: left !important;
 }
 
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
 .mg-top-15 {
   margin-top: 15px !important;
 }
@@ -86,6 +102,9 @@ ul {
 }
 
 /*END GENERIC STYLES*/
+.mobile-bottom-row-container {
+  display: none;
+}
 
 
 .logo {
@@ -97,16 +116,17 @@ ul {
 }
 
 .test-site-container {
-  width: 1440px;
+  /*min-width: 1000px;*/
   margin: 0 auto;
 }
 
 .test-site-header {
-  background: url('../images/header-bg-image-3.png')no-repeat;
+  background: url('../images/header-bg-image-3.jpg')no-repeat;
   background-size: cover;
   height: 100vh;
+  min-height: 960px;
   width: 100%;
-  min-width: 1440px;
+  min-width: 1000px;
   color: #FFFFFF;
   padding: 100px 200px 50px 200px;
   position: relative;
@@ -156,24 +176,27 @@ ul {
   width: 73%;
   height: 4px;
   background: #044A7A;
-  margin-bottom: 8px;
+  margin-bottom: 11px;
 }
 
 .test-site-analytics-img-section-one {
   width: 100%;
   height: 600px;
+  position: relative;
   background: url('../images/Test-three-img.jpg')no-repeat;
 }
 
 .test-site-analytics-img-section-two {
   width: 100%;
   height: 600px;
+  position: relative;
   background: url('../images/Dan-IdRamp-two.jpg')no-repeat;
 }
 
 .test-site-analytics-img-section-three {
   width: 100%;
   height: 600px;
+  position: relative;
   background: url('../images/Test-one-img.jpg')no-repeat;
 }
 
@@ -181,7 +204,7 @@ ul {
   background: #889AA3;
   height: 450px;
   width: 100%;
-  min-width: 1440px;
+  min-width: 1000px;
   color: #39454E;
   padding: 100px 200px 50px 200px;
 }
@@ -230,7 +253,8 @@ ul {
   vertical-align: top;
   background: #FFFFFF;
   display: inline-block;
-  }
+  position: absolute;
+}
 
 h2 {
   font-size: 40px;
@@ -263,10 +287,10 @@ h2 {
 
 
 .test-img-section-text {
-  font-size: 20px;
+  font-size: 18px;
   color: #39454E;
-  line-height: 40px;
-  padding: 40px 60px;
+  line-height: 33px;
+  padding: 40px 80px;
 }
 
 .client-logo-container {
@@ -368,6 +392,7 @@ h3 {
   background: #A5CE6C;
   border-radius: 0px;
   margin-left: 15px;
+  font-size: 18px;
   border: none;
   vertical-align: top;
 }
@@ -409,4 +434,180 @@ h5 {
 
 .po-box, .copyright {
   margin: 7px 0;
+}
+
+@media (max-width: 1100px) {
+  .test-img-section-text {
+    font-size: 16px;
+    padding: 40px 50px;
+  }
+  .test-site-section-one {
+    padding: 100px 100px 50px 100px;
+  }
+  .right-sub-hero {
+    width: 70%;
+  }
+  .test-section-text {
+    font-size: 17px;
+  }
+  .test-site-header {
+    min-height: 600px;
+  }
+  .logo-container {
+    width: 90%;
+  }
+  .sub-header {
+    font-size: 34px;
+  }
+  .header-text-box {
+    font-size: 90px;
+  }
+}
+
+@media (max-width: 980px) {
+  h2 {
+    font-size: 32px;
+    margin-top: 40px;
+  }
+
+  .client-logo-container h2 {
+    font-size: 32px;
+  }
+  .microsoft {
+    background-size: 100%;
+  }
+  .test-site-section-one {
+    padding: 80px 100px 50px 100px;
+  }
+}
+
+@media (max-width: 980px) {
+  .mobile {
+    visibility: visible;
+  }
+
+  .not-mobile {
+    visibility: hidden;
+  }
+
+  .section-40 {
+    position: relative;
+    height: 360px;
+  }
+
+  h2 {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+
+  .test-img-section-text {
+    font-size: 16px;
+    padding: 20px 20px;
+  }
+
+  .test-site-analytics-img-section-one {
+    height: 200px;
+    background-size: cover;
+  }
+
+  .test-site-analytics-img-section-two {
+    height: 200px;
+    background-size: cover;
+  }
+
+  .test-site-analytics-img-section-three {
+    height: 200px;
+    background-size: cover;
+  }
+
+  .section-40 {
+    width: 100%;
+  }
+
+  .test-site-header {
+    height: 400px;
+    min-width: 360px;
+  }
+
+  .test-site-section-one {
+    min-width: 360px;
+    padding: 20px 30px 20px 30px;
+  }
+}
+
+@media (max-width: 760px) {
+  .test-site-header {
+    padding: 30px 20px 20px 20px;
+  }
+
+  .header-text-box {
+    font-size: 60px;
+  }
+
+  .left-sub-hero {
+    padding: 0 0 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .sub-header {
+    font-size: 32px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .sub-header-underline {
+    display: none;
+  }
+
+  .right-sub-hero {
+    width: 100%;
+  }
+
+  .test-section-text {
+    line-height: 25px;
+  }
+
+  h2 {
+    font-size: 24px;
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
+
+  .test-img-section-text {
+    line-height: 28px;
+  }
+
+  .client-logo-container h2 {
+    font-size: 24px;
+  }
+
+  .logo-container ul {
+    height: auto;
+  }
+
+  .logo-container ul li {
+    width: 80%;
+    height: 160px;
+  }
+
+  .demo-input {
+    width: 300px;
+    margin-bottom: 15px;
+  }
+
+  .demo-submit-button {
+    width: 300px;
+    margin-left: 0;
+  }
+
+  .po-box, .copyright {
+    width: 100%;
+    text-align: center;
+  }
+
+  .mobile-bottom-row-container {
+    text-align: center;
+    display: block;
+  }
 }
